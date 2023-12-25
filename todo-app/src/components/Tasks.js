@@ -6,7 +6,7 @@ function Tasks({ tasks, onDelete, onToogle }) {
     return (
         <>
             {tasks.map((task) => (
-                <Task key={task.id} task={task} onDelete={onDelete} onToogle={onToogle} />
+                <Task key={task._id} task={task} onDelete={onDelete} onToogle={onToogle} />
             ))}
         </>
     )
